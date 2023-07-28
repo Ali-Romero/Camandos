@@ -1,32 +1,6 @@
 .main-section
   position: relative
   z-index 1
-  &:before
-    content: ""
-    position: absolute
-    width 100%
-    height: 143%
-    top: 0
-    left: 0
-    z-index -1
-    pointer-events: none
-    background-image: url('../images/main-image.png'),
-      url('../images/main-decor.svg'),
-      url('../images/main-decor-2.svg')
-    background-repeat: no-repeat
-    background-position: calc(50% - -14px) 316px, calc(50% - 149px) 1px, calc(50% - 232px) 543px
-    background-size: 343px auto, 101px auto, 264px auto
-    +above($breakpoints.sm)
-      background-position: calc(50% - -286px) -43px, calc(50% - 455px) -83px, calc(50% - 546px) 362px
-      background-size: 744px auto, 225px auto, 368px auto
-      height: 141%
-    +above($breakpoints.md)
-      background-position: calc(50% - -422px) -57px, calc(50% - 612px) -117px, calc(50% - 682px) 506px
-      background-size: 1036px auto, 321px auto, 433px auto
-    +above($breakpoints.xxl)
-      height: 161%
-      background-position: calc(50% - -594px) -75px, calc(50% - 850px) -243px, calc(50% - 1057px) 603px
-      background-size: 1469px auto, 567px auto, 876px auto
 
   &__inner
     padding: 20px 0 240px 0
@@ -36,54 +10,3 @@
       padding: 32px 0 72px 0
     +above($breakpoints.xxl)
       padding: 60px 0 105px 0
-
-  &__title-info
-    display: flex
-    align-items: center
-    margin: 0 0 10px 0
-    +above($breakpoints.sm)
-      margin: 0 0 20px 0
-    +above($breakpoints.md)
-      margin: 0 0 26px 0
-    +above($breakpoints.xxl)
-      margin: 0 0 32px 0
-    img
-      margin: 0 6px 0 0
-      width 14px
-      height: auto
-      +above($breakpoints.sm)
-        margin: 0 18px 0 0
-        width 18px
-      +above($breakpoints.md)
-        margin: 0 29px 0 0
-        width 24px
-
-  &__title
-    margin: 0 0 20px 0
-    z-index 1
-    text-align: center
-    +above($breakpoints.sm)
-      text-align: start
-    +above($breakpoints.md)
-      margin: 0 0 26px 0
-    +above($breakpoints.xxl)
-      margin: 0 0 38px 0
-
-  &__button-container
-    margin: 0 0 26px 0
-    +above($breakpoints.sm)
-      margin: 0
-      display: none
-
-  &__button-description
-    margin: 0 0 16px 0
-    text-align: center
-
-  &__button
-    max-width: 240px
-    margin: 0 auto
-
-  &__feedback
-    display: none
-    +above($breakpoints.sm)
-      display: block
