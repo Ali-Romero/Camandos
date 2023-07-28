@@ -1,0 +1,65 @@
+.feedback
+  &__title
+    margin: 0 0 10px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+    +above($breakpoints.md)
+      margin: 0 0 14px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 20px 0
+
+  &__description
+    margin: 0 0 10px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+      margin: 0 0 13px 0
+    +above($breakpoints.md)
+      margin: 0 0 16px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 28px 0
+
+  &__list
+    max-width: 532px
+    margin: 0 0 10px 0
+    +above($breakpoints.sm)
+      margin: 0 0 14px 0
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      justify-content: space-between
+    +above($breakpoints.md)
+      max-width: 626px
+    +above($breakpoints.xxl)
+      margin: 0 0 20px 0
+      max-width: 806px
+
+  &__item
+    width 100%
+    max-width: 250px
+    margin: 0 auto 10px auto
+    +above($breakpoints.sm)
+      max-width: 173px
+      margin: 0
+    +above($breakpoints.md)
+      max-width: 204px
+    +above($breakpoints.xxl)
+      max-width: 260px
+    &--textarea
+      height: 120px
+      +above($breakpoints.xxl)
+        height: 140px
+      .input
+        &__field
+          height: 100%
+  &__agree
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+    br
+      display: block
+      +above($breakpoints.sm)
+        display: none
+    a
+      text-decoration: underline

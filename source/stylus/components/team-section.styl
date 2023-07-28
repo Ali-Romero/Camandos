@@ -1,0 +1,193 @@
+.team-section
+  position relative
+  z-index 1
+
+  &__decor-1
+    position: absolute
+    z-index -1
+    top: 806px;
+    left: calc(50% - 227px);
+    +above($breakpoints.sm)
+      top: 423px;
+      left: calc(50% - 466px);
+    +above($breakpoints.md)
+      top: 372px
+      left: calc(50% - 616px);
+    +above($breakpoints.xxl)
+      left: calc(50% - 1203px)
+    img
+      width 327px
+      height: auto
+      +above($breakpoints.sm)
+        width 253px
+      +above($breakpoints.md)
+        width 480px
+      +above($breakpoints.xxl)
+        width 684px
+
+  &__decor-2
+    position: absolute
+    z-index -1
+    top: 161px;
+    right: calc(50% - 201px);
+    +above($breakpoints.sm)
+      top: 161px;
+      right: calc(50% - 440px);
+    +above($breakpoints.md)
+      top: 179px;
+      right: calc(50% - 664px);
+    +above($breakpoints.xxl)
+      top: 146px
+      right: calc(50% - 1047px)
+    img
+      width 294px
+      height: auto
+      +above($breakpoints.sm)
+        width 367px
+      +above($breakpoints.md)
+        width 554px
+      +above($breakpoints.xxl)
+        width 899px
+
+  &__decor-3
+    position: absolute
+    z-index -1
+    top: 108px;
+    left: calc(50% - 173px);
+    +above($breakpoints.sm)
+      top: 104px;
+      left: calc(50% - 374px);
+    +above($breakpoints.md)
+      top: 158px
+      left: calc(50% - 493px);
+    +above($breakpoints.xxl)
+      top: 169px
+      left: calc(50% - 674px);
+    img
+      width 53px
+      height: auto
+      +above($breakpoints.sm)
+        width 75px
+      +above($breakpoints.md)
+        width 120px
+      +above($breakpoints.xxl)
+        width 175px
+
+  &__decor-4
+    position: absolute
+    z-index -1
+    bottom: 10px;
+    right: calc(50% - 84px);
+    +above($breakpoints.sm)
+      bottom: 24px;
+      right: calc(50% - 384px);
+    +above($breakpoints.md)
+      bottom: 38px;
+      right: calc(50% - 520px);
+    +above($breakpoints.xxl)
+      bottom: 99px
+      right: calc(50% - 764px)
+    img
+      width 48px
+      height: auto
+      +above($breakpoints.sm)
+        width 60px
+      +above($breakpoints.md)
+        width 75px
+      +above($breakpoints.xxl)
+        width 131px
+
+  &__inner
+    padding: 25px 0 65px 0
+    +above($breakpoints.md)
+      padding: 54px 0 93px 0
+    +above($breakpoints.xxl)
+      padding: 68px 0 126px 0
+
+  &__title
+    margin: 0 0 16px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 26px 0
+
+  &__title-info
+    margin: 0 0 38px 0
+    +above($breakpoints.md)
+      margin: 0 0 49px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 69px 0
+
+  &__cards-list
+    display: flex
+    gap: 7px
+    flex-direction: column
+    align-items: center
+    +above($breakpoints.sm)
+      align-items: flex-start
+      flex-direction: row
+    +above($breakpoints.md)
+      gap: 40px
+    +above($breakpoints.xxl)
+      gap: 80px
+
+  &__cards-item
+    max-width: 256px
+    +above($breakpoints.sm)
+      max-width: 296px
+    +above($breakpoints.md)
+      max-width: 296px
+    +above($breakpoints.xxl)
+      max-width: 340px
+
+  &__card
+    width 100%
+    padding: 6px 6px 20px 6px
+    border-radius: 20px
+    border: 1px dashed $color-blue-1
+    background: #FFF;
+    +above($breakpoints.sm)
+      height: 429px
+    +above($breakpoints.md)
+      height: 510px
+      padding: 10px
+    +above($breakpoints.xxl)
+      height: 639px
+      padding: 20px
+
+  &__card-photo
+    margin: 0 0 18px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 39px 0
+    img
+      border-radius: 20px
+      width 100%
+      height: auto
+
+  &__card-title
+    margin: 0 0 7px 0
+    +above($breakpoints.md)
+      margin: 0 0 10px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 16px 0
+
+  &__card-description
+    margin: 0 0 14px 0
+    +above($breakpoints.md)
+      margin: 0 0 19px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 29px 0
+    div
+      margin: 0 0 2px 0
+      +above($breakpoints.md)
+        margin: 0 0 4px 0
+    br
+      display: block
+
+  &__card-button
+    max-width: 237px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      max-width: 222px
+    +above($breakpoints.md)
+      max-width: 253px
+    +above($breakpoints.xxl)
+      max-width: 284px

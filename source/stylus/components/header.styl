@@ -1,0 +1,48 @@
+.header
+  &__inner
+    padding: 12px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    +above($breakpoints.sm)
+      padding: 20px 0
+    +above($breakpoints.md)
+      padding: 30px 0
+    +above($breakpoints.xxl)
+      padding: 40px 0
+  &__container
+    display: flex
+    align-items: center
+  &__description
+    display: none
+    +above($breakpoints.sm)
+      position relative
+      padding: 0 0 0 22px
+      display: block
+      +above($breakpoints.xxl)
+        padding: 0 0 0 42px
+      &:before
+        content: ""
+        position: absolute
+        height: 100%
+        left: 0
+        width 2px
+        border-radius: 20px;
+        background-color: $color-dark-1
+    br
+      display: block
+
+  &__logo
+    +above($breakpoints.sm)
+      margin: 0 21px 0 0
+    +above($breakpoints.xxl)
+      margin: 0 41px 0 0
+    img
+      width 144px
+      height: auto
+      +above($breakpoints.sm)
+        width 150px
+      +above($breakpoints.md)
+        width 210px
+      +above($breakpoints.xxl)
+        width 303px

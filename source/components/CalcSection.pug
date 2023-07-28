@@ -1,0 +1,57 @@
+section.calc-section
+  .calc-section__separate.calc-section__separate--1
+    img(src="images/calc-bg-1.jpg" loading="lazy" alt="image" width="1920" height="153").d-block
+  .calc-section__separate.calc-section__separate--2
+    img(src="images/calc-bg-2.jpg" loading="lazy" alt="image" width="1920" height="123").d-block
+  .wrapper
+    .calc-section__inner.text-center
+      .calc-section__decor-2
+        img(src="images/calc-decor-1.svg" loading="lazy" alt="decor" width="475" height="446").d-block
+      .calc-section__decor-3
+        img(src="images/calc-decor-2.svg" loading="lazy" alt="decor" width="320" height="326").d-block
+      h2.calc-section__title.font-s-100
+        span.color-orange-1 Узнайте, 
+        |сколько будет 
+        br
+        |зарабатывать ваш детский сад 
+        br
+        span.color-blue-1 КОТ В ШЛЯПЕ
+      .calc-section__frame
+        .calc-section__frame-decor
+          .calc-section__frame-circle
+          .calc-section__frame-circle
+        .calc-section__frame-decor-2
+          img(src="images/calc-frame-decor.svg" loading="lazy" alt="decor" width="69" height="89").d-block
+        .calc-section__frame-title.font-s-46.font-l-reg
+          |Перетащите бегунок и узнайте, какой будет 
+          br
+          |прибыль 
+          span.color-orange-1 в течение первого года
+        .calc-section__frame-range
+          .range
+        .calc-section__frame-info.font-s-46.font-l-reg Результат
+        .calc-section__frame-total.font-s-80.font-l-reg.color-blue-1
+          span.js-range-total
+          span   рублей
+      .calc-section__feedback
+        .feedback
+          form(data-feedback-form).feedback__form
+            .feedback__title.font-l-reg.font-s-72
+              |Нужно больше данных?
+            .feedback__description.font-s-22
+              |Получите подробную финансовую модель франшизы
+            .feedback__list
+              .feedback__item
+                .input
+                  input(type="text" name="name" placeholder="Ваше имя").input__field
+              .feedback__item
+                .input
+                  input(type="tel" name="phone" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
+              .feedback__item
+                .btn
+                  button(type="submit")
+                    span.btn__description Получить
+            .feedback__agree.font-m-light.font-s-14
+              |Я принимаю условия 
+              br
+              a(href="#" data-remodal-target="privacy").color-orange-1 Политики конфиденциальности

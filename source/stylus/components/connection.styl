@@ -1,0 +1,38 @@
+.connection
+  display: flex
+  align-items: center
+  color: inherit
+
+  &__icon
+    margin: 0 2px 0 0
+    +above($breakpoints.sm)
+      margin: 0 8px 0 0
+    +above($breakpoints.xxl)
+      margin: 0 11px 0 0
+    img
+      width: 16px
+      height: auto
+      +above($breakpoints.sm)
+        width: 18px
+      +above($breakpoints.xxl)
+        width: 24px
+
+  &__num
+    font-size: 16px
+    line-height: 120%
+    font-family: "Manrope-Medium"
+    +above($breakpoints.sm)
+      font-size: 18px
+    +above($breakpoints.md)
+      font-size: 20px
+    +above($breakpoints.xxl)
+      font-size: 22px
+
+  &__description
+    display: flex
+    justify-content: center
+    flex-direction: column
+    text-align: center
+    span
+      margin: 0 0 0 10px
+      text-decoration: underline

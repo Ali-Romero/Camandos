@@ -1,0 +1,13 @@
+mixin header(index)
+  header.header
+    .wrapper
+      .header__inner
+        .header__container
+          .header__logo
+            img(src="images/logo-main.svg" loading="lazy" alt="logo" width="303" height="117").d-block
+          .header__description
+            |Франшиза частного 
+            br
+            |детского сада
+        .header__connection
+          +connection(index)

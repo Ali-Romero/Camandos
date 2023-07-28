@@ -1,0 +1,137 @@
+.finance-section
+  z-index: 1;
+  position: relative;
+  &:before
+    content: ""
+    position absolute
+    width 100%
+    height: 100%
+    top: 0
+    left: 0
+    pointer-events: none
+    background-image: url('../images/finance-image.png')
+    background-repeat: no-repeat
+    background-size: 160px auto;
+    background-position: calc(50% - 12px) 344px;
+    +above($breakpoints.sm)
+      background-size: 363px auto;
+      background-position: calc(50% - -251px) 500px;
+    +above($breakpoints.md)
+      background-size: 567px auto;
+      background-position: calc(50% - -251px) 427px;
+    +above($breakpoints.xxl)
+      background-size: 776px auto
+      background-position: calc(50% - -400px) 660px
+
+  &__inner
+    padding: 60px 0 10px 0
+    position relative
+    +above($breakpoints.md)
+      padding: 74px 0 10px 0
+    +above($breakpoints.xxl)
+      padding: 131px 0 16px 0
+  &__decor
+    position: absolute
+    top: -7px;
+    left: 1px;
+    +above($breakpoints.sm)
+      left: -9px;
+    +above($breakpoints.md)
+      left: -29px;
+    +above($breakpoints.xxl)
+      top: 12px
+      left: -98px
+    img
+      width 60px
+      height: auto
+      +above($breakpoints.md)
+        width 80px
+      +above($breakpoints.xxl)
+        width 96px
+  &__title
+    margin: 0 0 40px 0
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+      margin: 0 0 50px 0
+    +above($breakpoints.md)
+      margin: 0 0 80px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 114px 0
+
+  &__info
+    max-width: 200px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      max-width: 100%
+      margin: 0
+
+  &__info-list
+    margin: 0 0 30px 0
+    +above($breakpoints.sm)
+      margin: 0
+      display: flex
+      flex-wrap: wrap
+      gap: 60px 38px
+    +above($breakpoints.xxl)
+      gap: 100px 76px
+
+  &__info-item
+    display: flex
+    justify-content: center
+    +above($breakpoints.sm)
+      width auto !important
+
+  &__info-container
+    width 188px
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: left
+      width 213px
+    +above($breakpoints.xxl)
+     width 234px
+    br
+      display: block
+
+  &__info-icon
+    margin: 0 0 14px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 24px 0
+    img
+      width 46px
+      height: auto
+      margin: 0 auto
+      +above($breakpoints.sm)
+        margin: 0
+        width 51px
+      +above($breakpoints.md)
+        width 61px
+      +above($breakpoints.xxl)
+        width 71px
+
+  &__info-title
+    margin: 0 0 6px 0
+
+  &__info-progress
+    position: relative
+    height: 7px !important
+    border-radius: 10px
+    overflow: hidden
+    +above($breakpoints.sm)
+      display: none
+    .swiper-pagination-progressbar-fill
+      border-radius: 40px
+      background: $color-orange-1
+
+  &__feedback
+    padding: 160px 0 64px 0
+    background-image: url('../images/finance-feedback-bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    +above($breakpoints.sm)
+      padding: 144px 0 102px 0
+    +above($breakpoints.md)
+      padding: 199px 0 121px 0
+    +above($breakpoints.xxl)
+      padding: 221px 0 245px 0

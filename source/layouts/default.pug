@@ -1,0 +1,18 @@
+extends ../layouts/base
+include ../components/Icon
+include ../components/Header
+include ../components/Footer
+include ../components/Connection
+
+block body
+  .page
+    .page__header
+
+    .page__content
+      block content
+
+    .page__footer
+      +footer(true)
+
+block dev-scripts
+  script(src="js/swiper.js")

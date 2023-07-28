@@ -1,0 +1,66 @@
+@font-face
+  font-family: "Manrope-Light"
+  src: url('../fonts/Manrope-Light.woff'), url('../fonts/Manrope-Light.woff2')
+  font-display: swap
+@font-face
+  font-family: "Manrope-Regular"
+  src: url('../fonts/Manrope-Regular.woff'), url('../fonts/Manrope-Regular.woff2')
+  font-display: swap
+@font-face
+  font-family: "Manrope-Medium"
+  src: url('../fonts/Manrope-Medium.woff'), url('../fonts/Manrope-Medium.woff2')
+  font-display: swap
+@font-face
+  font-family: "Manrope-SemiBold"
+  src: url('../fonts/Manrope-SemiBold.woff'), url('../fonts/Manrope-SemiBold.woff2')
+  font-display: swap
+
+@font-face
+  font-family: "LifehackSans-Regular"
+  src: url('../fonts/LifehackSans-Regular.woff'), url('../fonts/LifehackSans-Regular.woff2')
+  font-display: swap
+
+@import 'common/variables'
+@import 'common/*'
+@import 'components/*'
+
+.page
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  overflow: hidden
+  position relative
+  background-color: $color-milk-1
+  color: $color-dark-1
+  max-width: 1920px
+  margin: 0 auto
+
+  &--thanks
+    background-image: url('../images/format-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    font-size: 13px
+    line-height: 130%
+    color: $color-dark-1
+    +above($breakpoints.xxl)
+      font-size: 16px
+    .header__inner
+      padding: 20px 0
+    .connection
+      &__description
+        font-size: 11px
+        line-height: 120%
+        +above($breakpoints.sm)
+          font-size: 12px
+        +above($breakpoints.md)
+          font-size: 13px
+        +above($breakpoints.xxl)
+          font-size: 14px
+  &__content
+    flex: 1
+    &--layout
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column

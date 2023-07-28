@@ -1,0 +1,15 @@
+mixin connection(index)
+  .connection
+    .connection__icon
+      img(src="images/connection-phone.svg" loading="lazy" alt="phone" width="20" height="20").d-block
+
+    .connection__container
+      if index
+        a(href="tel:+70000000000").connection__num.font-g-s-bold.font-s-20 +7 000 000 00 00
+        a(href="#" type="submit" data-remodal-target="modal-form-call").connection__description.font-s-14.font-g-reg
+          span заказать звонок
+      else
+        a(href="tel:+70000000000").connection__num.font-g-s-bold.font-s-20 +7 000 000 00 00
+        a(href="tel:+70000000000").connection__description.font-s-17
+          span позвоните сейчас 
+          span чтобы не ждать звонка

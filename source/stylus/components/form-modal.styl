@@ -1,0 +1,55 @@
+.form-modal
+  &__feedback
+    border-radius: 20px;
+    background: #EFF2F7
+    padding: 36px 20px 17px 20px;
+    +above($breakpoints.sm)
+      padding: 32px 18px
+    +above($breakpoints.xxl)
+      padding: 40px 36px
+
+  &__info-title
+    font-size: 16px;
+    line-height: 120%
+    margin: 0 -12px 18px -12px
+    font-family: "Manrope-SemiBold"
+    +above($breakpoints.sm)
+      font-size: 21px
+      margin: 0 0 20px 0
+    +above($breakpoints.xxl)
+      font-size: 23px
+    br
+      display: block
+
+  &__feedback-item
+    max-width: 246px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      max-width: 280px
+    +above($breakpoints.xxl)
+      max-width: 330px
+  &__feedback-input
+    height: 50px
+    margin-bottom: 10px
+    +above($breakpoints.sm)
+      height: 60px
+      margin-bottom: 10px
+    +above($breakpoints.xxl)
+      height: 70px
+      margin-bottom: 14px
+
+  &__button
+    margin-bottom: 14px
+    .btn
+      height: 50px
+      +above($breakpoints.sm)
+        height: 60px
+      +above($breakpoints.xxl)
+        height: 70px
+
+  &__agree
+    font-size: 12px;
+    line-height: 14px;
+    +above($breakpoints.sm)
+      font-size: 13px;
+      line-height: 15px;

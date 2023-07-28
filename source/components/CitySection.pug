@@ -1,0 +1,34 @@
+section.city-section
+  .city-section__separate
+    img(src="images/city-bg.jpg" loading="lazy" alt="image" width="1920" height="123").d-block
+  .wrapper
+    .city-section__inner
+      h2.city-section__title.font-s-100
+        |Откройте первый в городе 
+        br
+        |частный детский сад 
+        br
+        span.text-up.color-orange-1 КОТ В ШЛЯПЕ
+      .city-section__feedback
+        .feedback
+          form(data-feedback-form).feedback__form
+            .feedback__description.font-s-22.font-m-s-bold
+              |Проверьте, свободен ли ваш регион 
+              br
+              |для работы по франшизе
+            .feedback__list
+              .feedback__item
+                .input
+                  input(type="text" name="city" placeholder="Ваш город").input__field
+              .feedback__item
+                .input
+                  input(type="tel" name="phone" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
+              .feedback__item
+                .btn
+                  button(type="submit")
+                    span.btn__description Проверить
+            .feedback__agree.font-m-light.font-s-14
+              |Я принимаю условия 
+              a(href="#" data-remodal-target="privacy").color-orange-1 Политики 
+                br
+                |конфиденциальности
